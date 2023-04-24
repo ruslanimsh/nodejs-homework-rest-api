@@ -43,14 +43,14 @@ router.get("/:contactId", async (req, res, next) => {
 router.post('/', async (req, res, next) => {
   // res.json({ message: 'template message' })
    try {
-     const validationResult = bodySchema.validate(req.body);
-     const body = req.body;
+     const {error} = bodySchema.validate(req.body);
+     
 
-     if (validationResult.error) {
+     if (error) {
        throw RequestError(404, "missing required name field");
      }
 
-     const newContact = await addContact(body);
+     const newContact = await addContact(req.body);
 
      res.status(201).json(newContact);
    } catch (error) {
@@ -77,20 +77,15 @@ router.delete('/:contactId', async (req, res, next) => {
 router.put('/:contactId', async (req, res, next) => {
   // res.json({ message: 'template message' })
   try {
-    const validationResult = bodySchema.validate(req.body);
-
-    if (validationResult.error) {
-      return res.status(400).json({ status: validationResult.error.details });
+    const { error } = bodySchema.validate(req.body);
+    
+    if (error) {
+      throw RequestError(400, "missing fields");
     }
 
     const contactId = req.params.contactId;
-    const body = req.body;
-
-    if (body === null) {
-      throw RequestError(400, "Missing fields");
-    }
-
-    const contactUpdate = await updateContact(contactId, body);
+    
+    const contactUpdate = await updateContact(contactId, req.body);
     if (!contactUpdate) {
       throw RequestError(404, "Not found");
     }
