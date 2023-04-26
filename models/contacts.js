@@ -39,14 +39,14 @@ const removeContact = async (id) => {
   return result;
 };
 
-const updateContact = async (id, { name, email, phone }) => {
+const updateContact = async (id, body) => {
   const contacts = await listContacts();
   const contaktId = String(id);
   const index = contacts.findIndex((contact) => contact.id === contaktId);
   if (index === -1) {
     return null;
   }
-  contacts[index] = { id, name, email, phone };
+  contacts[index] = { ...contacts[index], ...body };
   await updateContacts(contacts);
   return contacts[index];
 };
