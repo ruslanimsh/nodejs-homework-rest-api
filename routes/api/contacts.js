@@ -77,15 +77,18 @@ router.delete('/:contactId', async (req, res, next) => {
 router.put('/:contactId', async (req, res, next) => {
   // res.json({ message: 'template message' })
   try {
+    
     const { error } = bodySchema.validate(req.body);
+    if (error)
+      return res.status(400).json({ message: error.details[0].message })
     
-    if (error) {
-      throw RequestError(400, "missing fields");
+    const  contactId  = req.params.contactId
+    const { name, email, phone } = req.body
+    if (!name && !email && !phone) {
+      res.status(400).json({ message: "missing fields" })
     }
-
-    const contactId = req.params.contactId;
-    
-    const contactUpdate = await updateContact(contactId, req.body);
+    const contactUpdate = await updateContact(contactId, req.body)
+   
     if (!contactUpdate) {
       throw RequestError(404, "Not found");
     }

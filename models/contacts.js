@@ -39,16 +39,19 @@ const removeContact = async (id) => {
   return result;
 };
 
-const updateContact = async (id, body) => {
+const updateContact = async (contactId, body) => {
   const contacts = await listContacts();
-  const contaktId = String(id);
-  const index = contacts.findIndex((contact) => contact.id === contaktId);
+  // const contactId = String(id);
+  // const index = contacts.findIndex((contact) => contact.id === contactId);
+   const index = contacts.findIndex(
+     (contact) => String(contact.id) === String(contactId)
+   );
   if (index === -1) {
     return null;
   }
-  contacts[index] = { ...contacts[index], ...body };
+  const contactUpdate = { ...contacts[index], ...body };
   await updateContacts(contacts);
-  return contacts[index];
+  return contactUpdate;
 };
 
 module.exports = {
