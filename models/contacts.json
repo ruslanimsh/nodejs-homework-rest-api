@@ -1,86 +1,62 @@
 [
   {
-    "id": "AeHIrLTr6JkxGE6SN-0Rw",
     "name": "Allen Raymond",
     "email": "nulla.ante@vestibul.co.uk",
-    "phone": "(992) 914-3792"
+    "phone": "(992) 914-3792",
+    "favorite": false
   },
   {
-    "id": "qdggE76Jtbfd9eWJHrssH",
     "name": "Chaim Lewis",
     "email": "dui.in@egetlacus.ca",
-    "phone": "(294) 840-6685"
+    "phone": "(294) 840-6685",
+    "favorite": true
   },
   {
-    "id": "drsAJ4SHPYqZeG-83QTVW",
     "name": "Kennedy Lane",
     "email": "mattis.Cras@nonenimMauris.net",
-    "phone": "(542) 451-7038"
+    "phone": "(542) 451-7038",
+    "favorite": false
   },
   {
-    "id": "vza2RIzNGIwutCVCs4mCL",
     "name": "Wylie Pope",
     "email": "est@utquamvel.net",
-    "phone": "(692) 802-2949"
+    "phone": "(692) 802-2949",
+    "favorite": true
   },
   {
-    "id": "05olLMgyVQdWRwgKfg5J6",
     "name": "Cyrus Jackson",
     "email": "nibh@semsempererat.com",
-    "phone": "(501) 472-5218"
+    "phone": "(501) 472-5218",
+    "favorite": true
   },
   {
-    "id": "1DEXoP8AuCGYc1YgoQ6hw",
     "name": "Abbot Franks",
     "email": "scelerisque@magnis.org",
-    "phone": "(186) 568-3720"
+    "phone": "(186) 568-3720",
+    "favorite": true
   },
   {
-    "id": "Z5sbDlS7pCzNsnAHLtDJd",
     "name": "Reuben Henry",
     "email": "pharetra.ut@dictum.co.uk",
-    "phone": "(715) 598-5792"
+    "phone": "(715) 598-5792",
+    "favorite": true
   },
   {
-    "id": "C9sjBfCo4UJCWjzBnOtxl",
     "name": "Simon Morton",
     "email": "dui.Fusce.diam@Donec.com",
-    "phone": "(233) 738-2360"
+    "phone": "(233) 738-2360",
+    "favorite": true
   },
   {
-    "id": "e6ywwRe4jcqxXfCZOj_1e",
     "name": "Thomas Lucas",
     "email": "nec@Nulla.com",
-    "phone": "(704) 398-7993"
+    "phone": "(704) 398-7993",
+    "favorite": false
   },
   {
-    "id": "rsKkOQUi80UsgVPCcLZZW",
     "name": "Alec Howard",
     "email": "Donec.elementum@scelerisquescelerisquedui.net",
-    "phone": "(748) 206-2688"
-  },
-  {
-    "id": "773abee5-037e-4c05-bcd1-fe5a22c3ead3",
-    "name": "Rrrr",
-    "email": "qqqqdui.in@egetlacus.ca",
-    "phone": "(000) 840-6685"
-  },
-  {
-    "id": "4a8f0536-c748-4e61-b831-a4610e6a9072",
-    "name": "Alleks Saymond",
-    "email": "sulla.ante@vestibul.co.uk",
-    "phone": "(992) 000-1111"
-  },
-  {
-    "id": "957545a5-5882-4707-ae7d-c525c58522ea",
-    "name": "Rom Saymond",
-    "email": "ryulla.ante@vestibul.co.uk",
-    "phone": "(092) 000-1111"
-  },
-  {
-    "id": "14d1cf02-466b-4b83-8489-76d98634db53",
-    "name": "Saymond A",
-    "email": "ante@vestibul.co.uk",
-    "phone": "(002) 000-1111"
+    "phone": "(748) 206-2688",
+    "favorite": true
   }
 ]
